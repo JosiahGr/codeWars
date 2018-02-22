@@ -1,12 +1,8 @@
 function capitalize(s){
-
-  let newArray = s.slice();
-  let whichLetter = 0;
-
-  for(var i = 0; i < newArray.length; i++) {
-    whichLetter += 1;
-  } if (whichLetter % 2 == 0) {
-    newArray.toUpperCase();
+  let newStrings = ['',''];
+  for (let i in s){
+    newStrings [i % 2] += s[i].toUpperCase();
+    newStrings [1 - i % 2] += s[i];
   }
-  return newArray;
+  return newStrings;
 }
