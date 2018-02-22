@@ -1,8 +1,8 @@
 function capitalize(s){
-  let newStrings = ['',''];
+  let newStr = ['',''];
   for (let i in s){
-    newStrings [i % 2] += s[i].toUpperCase();
-    newStrings [1 - i % 2] += s[i];
+    newStr [i % 2] += s[i].toUpperCase();
+    newStr [1 - i % 2] += s[i];
   }
-  return newStrings;
+  return newStr;
 }
